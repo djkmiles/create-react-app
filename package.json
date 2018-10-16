@@ -5,13 +5,15 @@
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-less-watcher": "^1.1.4",
     "react-scripts": "2.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run watch-less & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch-less": "react-less-watcher -d src"
   },
   "eslintConfig": {
     "extends": "react-app"
